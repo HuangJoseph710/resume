@@ -1,0 +1,395 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+    object-fit: contain;
+}
+.main {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto; 
+    background-color: rgb(255, 255, 255);
+}
+.tittle{
+    font-size: large;
+}
+body{
+    background: rgb(229, 238, 246);
+}
+nav{
+    width: 580px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px 0px 8px 8px;
+    font-size: 0;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.abso{
+    position: absolute;
+    right: 0;
+    width: 580px;
+    height: 50px;
+    z-index: 99;
+}
+.fix{
+    position: fixed;
+    top: 0;
+}
+nav a{
+    font-size: 18px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, .6);
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    width: 110px;
+}
+nav a:nth-child(3){
+    width:135px;
+}
+nav a:nth-child(4){
+    width:115px;
+}
+nav .animation,nav .animation-shadow{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: 0;
+    background: #1abc9c;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+nav .animation-shadow{
+    background: rgba(26, 188, 156);
+}
+nav a:nth-child(1).active ~ .animation,
+nav a:nth-child(1).active ~ .animation-shadow,
+nav a:nth-child(1):hover ~ .animation-shadow{
+    width: 110px;
+    left: 0;
+}
+nav a:nth-child(2).active ~ .animation,
+nav a:nth-child(2).active ~ .animation-shadow,
+nav a:nth-child(2):hover ~ .animation-shadow
+{
+    width: 110px;
+    left: 110px;
+}
+
+nav a:nth-child(3).active ~ .animation,
+nav a:nth-child(3).active ~ .animation-shadow,
+nav a:nth-child(3):hover ~ .animation-shadow{
+    width: 135px;
+    left: 220px;
+}
+
+nav a:nth-child(4).active ~ .animation,
+nav a:nth-child(4).active ~ .animation-shadow,
+nav a:nth-child(4):hover ~ .animation-shadow
+{
+    width: 115px;
+    left: 355px;
+}
+
+nav a:nth-child(5).active ~ .animation,
+nav a:nth-child(5).active ~ .animation-shadow,
+nav a:nth-child(5):hover ~ .animation-shadow{
+    width: 110px;
+    left: 470px;
+}
+
+.head{
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 200px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.name{
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    top: 320px;
+    left: 330px;
+    letter-spacing: 3px;
+}
+
+.cl{
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 330px;
+    left: 500px;
+}
+
+.imgCtrl{
+    width: 960px;
+}
+section{
+    padding: 50px;
+}
+
+section h1{
+    color: black;
+    font-size: 25pt;
+    text-shadow: rgba(132, 132, 132, 0.9) 0.1em 0.1em 0.2em;
+}
+h1 span{
+    color: #04b4e0;
+}
+
+.box{
+    width: 425px;
+    padding: 10px 30px;
+}
+
+.biggerbox{
+    width: 900px;
+    padding: 10px 30px;
+}
+
+.word{
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.high{
+    color: #04b4e0;
+    font-weight: bold;
+}
+
+.box h2,.biggerbox h2{
+    margin-bottom: 10px;
+}
+
+
+.skills-info.skills-second-style h4 {
+    font-size: 14px;
+    line-height: 1.1em;
+    position: relative;
+    float: left;
+    margin: 0 0 4px;
+}
+.skills-second-style .skill-value {
+    font-size: 12px;
+    line-height: 1.1em;
+    position: relative;
+    float: right;
+    margin: 0 0 4px;
+    color: #aaa;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.skills-second-style .skill-container {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #04b4e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.skills-second-style .skill-container:before {
+    content: '';
+    position: absolute;
+    background-color: #04b4e0;
+}
+.skills-second-style .skill-container.skill-1 .skill-percentage {
+    width: 90%;
+}
+.skills-second-style .skill-container.skill-2 .skill-percentage {
+    width: 85%;
+}
+.skills-second-style .skill-container.skill-3 .skill-percentage {
+    width: 75%;
+}
+.skills-second-style .skill-container.skill-4 .skill-percentage {
+    width: 60%;
+}
+.skills-second-style .skill-container.skill-5 .skill-percentage {
+    width: 80%;
+}
+.skills-second-style .skill-container.skill-6 .skill-percentage {
+    width: 95%;
+}
+.skills-second-style .skill-container.skill-7 .skill-percentage {
+    width: 80%;
+}
+.skills-second-style .skill-container.skill-8 .skill-percentage {
+    width: 85%;
+}
+.skills-second-style .skill-container.skill-9 .skill-percentage {
+    width: 55%;
+}
+.skills-second-style .skill-container.skill-10 .skill-percentage {
+    width: 60%;
+}
+
+.skills-second-style .skill-percentage {
+    background-color: #04b4e0;
+    border: 2px solid white;
+    border-radius: 9px;
+    height: 8px;
+    padding: 0;
+}
+
+
+.timeline-second-style .timeline-item {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.timeline-second-style .left-part {
+    width: 10%;
+    display: table-cell;
+    padding-right: 25px;
+    min-height: 100%;
+    text-align: right;
+    vertical-align: top;
+}
+.timeline-second-style .item-period {
+    margin: 3px 0;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+.timeline-second-style .item-company {
+    display: block;
+    margin: 0 0 4px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.45em;
+    color: #757677;
+}
+.timeline-second-style .divider {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    bottom: 0;
+    width: 1px;
+    background-color: #ccc;
+}
+.timeline-second-style .divider:before {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 2px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: -9px;
+    border-radius: 50%;
+    background-color: #04b4e0;
+    opacity: .25;
+    z-index: 0;
+}
+.timeline-second-style .divider:after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 6px;
+    width: 8px;
+    height: 8px;
+    margin-left: -5px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #04b4e0;
+    z-index: 1;
+}
+.timeline-second-style .right-part {
+    width: 90%;
+    display: table-cell;
+    padding-left: 25px;
+    padding-right: 15px;
+    vertical-align: top;
+}
+.clearfix:after {
+    clear: both;
+}
+.timeline-second-style .item-title {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.timeline-pic{
+    width: 10%;
+    float: left;
+}
+.timeline-p{
+    width: 90%;
+    float: left;
+}
+.timeline-p:after{
+    clear: both;
+}
+
+.item-pic{
+    float: left;
+    margin: 10px;
+    margin-left: 20px;
+    display: flex;
+}
+.pic-word{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(76, 147, 179);
+    height: 100px;
+}
+.left{
+    float: left;
+    flex-direction: column;
+}
+.leftBox{
+    border: #e5e5e5 solid 2px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 10px;
+}
+.leftBox:hover{
+    background-color: rgb(192, 192, 192);
+}
+.leftBox-pic{
+    width: 50px;
+    margin-bottom: 5px;
+}
+.leftBox div span{
+    align-items: center;
+}
+.leftBox div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+.rightBox{
+    border: #e5e5e5 solid 2px;
+    width: 600px;
+    height: 470px;
+    display: flex;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
