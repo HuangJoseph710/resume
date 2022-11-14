@@ -138,7 +138,7 @@ section{
 section h1{
     color: black;
     font-size: 25pt;
-    text-shadow: rgba(132, 132, 132, 0.9) 0.1em 0.1em 0.2em;
+    text-shadow: rgba(185, 185, 185, 0.945) 0.1em 0.1em 0.2em;
 }
 h1 span{
     color: #04b4e0;
@@ -155,7 +155,7 @@ h1 span{
 }
 
 .word{
-    font-family: sans-serif;
+    line-height: 160%;
     font-size: large;
 }
 
@@ -365,9 +365,11 @@ footer{
     justify-content: center; 
     align-items: center;
     margin: 10px;
+    transition: 1s;
 }
 .leftBox:hover{
     background-color: rgb(192, 192, 192);
+    transition: 0.8s;
 }
 .leftBox-pic{
     width: 50px;
@@ -387,9 +389,64 @@ footer{
     width: 600px;
     height: 470px;
     display: flex;
+    flex-direction: column;
 }
 form{
     display: flex;
     flex-direction: column;
     padding: 20px;
+}
+.f3, .f4 {
+    appearance: auto;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    display: inline-block;
+    position: relative;
+    padding: 0.8em 2.1em;
+    font-size: 16px;
+    line-height: 1.2;
+    border: 0;
+    outline: 0;
+    border: 2px solid #04b4e0;
+    color: #222;
+    text-shadow: none;
+    background-color: #fff;
+    border-radius: 30px;
+    transition: 0.7s;
+    width: 45%;
+}
+.f3:hover,.f4:hover{
+    color: white;
+    background-color: #04b4e0;
+    font-weight: bold;
+    transition: 1s;
+}
+.f{
+    padding: 10px;
+    margin-top: 10px;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+form span{
+    font-size: larger;
+    color: #04b4e0;
+    font-weight: bold;
+    text-shadow: rgba(204, 204, 204, 0.705) 0.1em 0.1em 0.2em;
+}
+.f1, .f2{
+    border: none;
+    border: #a1a1a1 2px solid;
+    box-shadow: #5a5a5aa9 1px 1px 5px;
+    transition: 1s;
+}
+.f1:focus ,.f2:focus{
+    border: none;
+    border: #04b4e06e 10px solid;
+    transition: 1s;
 }

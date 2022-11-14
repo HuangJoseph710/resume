@@ -152,7 +152,7 @@
         <section id="exp" style="padding-top: 40px;">
             <h1>個人<span>經歷</span></h1>
             <div class="biggerbox">
-                <h2 style="margin-left: 10px;">學歷</h2>
+                <h2 style="margin-left: 10px; margin-top: 15px;">學歷</h2>
 
                 <div class="timeline timeline-second-style clearfix">
                     <div class="timeline-item clearfix">
@@ -310,7 +310,7 @@
                     <div class="leftBox">
                         <div onclick="location.href='https://github.com/HuangJoseph710';" style="cursor :pointer;">
                             <img src="img/githublogo.png" class="leftBox-pic">
-                            <span class="high">github</span>
+                            <span class="high">Github</span>
                         </div>
                     </div>
                     <div class="leftBox">
@@ -328,14 +328,17 @@
                 </div>
                 <div class="left box">
                     <div class="rightBox">
+                        
                         <form id="contact_form" method="post" action="mailto:josephhuang0710@gmail.com" enctype="text/plain">
-                            姓名：
-                            <input type="text" name="username" value="你的名字" size="10" maxlength="10" />
-                            <br>內文：
-                            <textarea name="memo" cols="70" rows="15" wrap="hard"> </textarea>
-                            <br>
-                            <input type="submit" value="送出" />
+                            <span>有想對我說的話?</span>
+                            <input class="f f1" type="text" name="name" size="10" maxlength="20" />
+                            
+                            <textarea class="f f2" name="memo" cols="10" rows="15" wrap="hard"> </textarea>
+                            <div class="button">
+                                <input class="f f3" type="submit" value="送出" />
 
+                                <input class="f f4" type="reset" value="重填">
+                            </div>
 
 
                         </form>
