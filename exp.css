@@ -1,0 +1,208 @@
+.back_btn {
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #f4f4f4;
+}
+
+.back_btn > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+}
+
+.back_btn:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+}
+
+.back_btn:hover {
+    box-shadow: 9px 9px 33px #bbb, -9px -9px 33px #ddd;
+    transform: translateY(-2px);
+}
+
+.exp_details {
+    padding: 50px 50px;
+    display: table-cell;
+}
+
+header {
+    margin-bottom: 60px;
+}
+
+.item-title {
+    font-size: 24pt;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+iframe {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.place_mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+/*back to top*/
+.to_top {
+    width: 140px;
+    height: 56px;
+    overflow: hidden;
+    border: none;
+    color: #000;
+    background: none;
+    position: relative;
+    padding-bottom: 2em;
+}
+
+.to_top > div,.to_top > svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.to_top:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background: currentColor;
+    transition: transform 0.25s ease-out;
+}
+
+.to_top:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.to_top .clone > *,.to_top .text > * {
+    opacity: 1;
+    font-size: 1.3rem;
+    transition: 0.2s;
+    margin-left: 4px;
+}
+
+.to_top .clone > * {
+    transform: translateY(60px);
+}
+
+.to_top:hover .clone > * {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.to_top:hover .text > * {
+    opacity: 1;
+    transform: translateY(-60px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.to_top:hover .clone > :nth-child(1) {
+    transition-delay: 0.15s;
+}
+
+.to_top:hover .clone > :nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.to_top:hover .clone > :nth-child(3) {
+    transition-delay: 0.25s;
+}
+
+.to_top:hover .clone > :nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.to_top svg {
+    width: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-50deg);
+    transition: 0.2s ease-out;
+}
+
+.to_top:hover svg {
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.corner {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}

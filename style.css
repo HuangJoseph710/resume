@@ -220,7 +220,7 @@ h1 span{
     width: 60%;
 }
 .skills-second-style .skill-container.skill-5 .skill-percentage {
-    width: 80%;
+    width: 70%;
 }
 .skills-second-style .skill-container.skill-6 .skill-percentage {
     width: 95%;
@@ -313,9 +313,15 @@ h1 span{
 .timeline-second-style .right-part {
     width: 90%;
     display: table-cell;
-    padding-left: 25px;
-    padding-right: 15px;
+    padding: 10px 15px 10px 25px;
     vertical-align: top;
+    transition: 0.75s ease;
+    cursor: pointer;
+}
+.timeline-second-style .right-part:hover {
+    box-shadow: #5a5a5aa9 2px 2px 7px;
+    background-color: #04b4e025;
+    transition: 0.3s ease;
 }
 .clearfix:after {
     clear: both;
